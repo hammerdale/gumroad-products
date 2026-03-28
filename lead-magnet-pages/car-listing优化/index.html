@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Your Car for MORE | Facebook Marketplace Listing Optimizer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #1e3a5f 0%, #0f172a 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+            color: white;
+            padding: 50px 40px 40px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+        
+        .hero h1 span {
+            display: block;
+            font-size: 22px;
+            font-weight: 600;
+            margin-top: 10px;
+            opacity: 0.95;
+        }
+        
+        .hero .subtitle {
+            font-size: 18px;
+            margin-top: 15px;
+            opacity: 0.95;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .problem-box {
+            background: #fef2f2;
+            border-left: 4px solid #ef4444;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+        
+        .problem-box h3 {
+            color: #dc2626;
+            margin-bottom: 10px;
+        }
+        
+        .solution-box {
+            background: #f0fdf4;
+            border-left: 4px solid #22c55e;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+        
+        .solution-box h3 {
+            color: #16a34a;
+            margin-bottom: 10px;
+        }
+        
+        .how-it-works {
+            margin: 30px 0;
+        }
+        
+        .how-it-works h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #1e293b;
+        }
+        
+        .steps {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+            text-align: center;
+        }
+        
+        .step {
+            padding: 20px 10px;
+            background: #f8fafc;
+            border-radius: 12px;
+        }
+        
+        .step-num {
+            width: 35px;
+            height: 35px;
+            background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin: 0 auto 10px;
+        }
+        
+        .step h4 {
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #1e293b;
+        }
+        
+        .step p {
+            font-size: 12px;
+            color: #64748b;
+        }
+        
+        .cta-section {
+            background: #f8fafc;
+            padding: 35px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .cta-section h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #1e293b;
+        }
+        
+        .cta-section .price {
+            font-size: 48px;
+            font-weight: 800;
+            color: #22c55e;
+            margin: 15px 0;
+        }
+        
+        .cta-section .price span {
+            font-size: 18px;
+            color: #64748b;
+            font-weight: 400;
+        }
+        
+        .cta-section .guarantee {
+            font-size: 13px;
+            color: #64748b;
+            margin-top: 10px;
+        }
+        
+        .form-section {
+            margin-top: 25px;
+        }
+        
+        .form-section input {
+            width: 100%;
+            padding: 16px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 15px;
+            margin-bottom: 12px;
+        }
+        
+        .form-section input:focus {
+            outline: none;
+            border-color: #22c55e;
+        }
+        
+        .form-section button {
+            width: 100%;
+            padding: 18px;
+            background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        .form-section button:hover {
+            transform: translateY(-2px);
+        }
+        
+        .results {
+            margin-top: 35px;
+            padding-top: 25px;
+            border-top: 1px solid #e2e8f0;
+        }
+        
+        .results h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #1e293b;
+        }
+        
+        .result-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        
+        .result-item {
+            text-align: center;
+            padding: 15px;
+            background: #f8fafc;
+            border-radius: 8px;
+        }
+        
+        .result-item .number {
+            font-size: 28px;
+            font-weight: 800;
+            color: #22c55e;
+        }
+        
+        .result-item p {
+            font-size: 13px;
+            color: #64748b;
+        }
+        
+        @media (max-width: 600px) {
+            .steps {
+                grid-template-columns: 1fr;
+            }
+            .result-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>🚗 Sell Your Car for MORE</h1>
+            <span>Professional Facebook Marketplace Listing That Actually Sells</span>
+            <p class="subtitle">Stand out from 100 other listings. Get more views, more offers, more money.</p>
+        </div>
+        
+        <div class="content">
+            <div class="problem-box">
+                <h3>😰 Your car deserves better than a boring listing</h3>
+                <p>You're trying to sell your car, but it's lost in a sea of hundreds of identical listings. No views. No offers. Weeks go by.</p>
+            </div>
+            
+            <div class="solution-box">
+                <h3>💰 Get $1,000-3,000 MORE for your car</h3>
+                <p>A professional listing with great photos, compelling description, and strategic pricing doesn't just attract more buyers—it commands higher prices.</p>
+            </div>
+            
+            <div class="how-it-works">
+                <h2>How It Works</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-num">1</div>
+                        <h4>Send Your Info</h4>
+                        <p>Upload your photos & tell me about your car</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-num">2</div>
+                        <h4>I Optimize It</h4>
+                        <p>Rewritten listing + pricing research + tips</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-num">3</div>
+                        <h4>Sell Fast</h4>
+                        <p>Post and watch the offers roll in</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="results">
+                <h3>Recent Results</h3>
+                <div class="result-grid">
+                    <div class="result-item">
+                        <div class="number">47%</div>
+                        <p>More views than average listings</p>
+                    </div>
+                    <div class="result-item">
+                        <div class="number">$2,100</div>
+                        <p>Average extra value created</p>
+                    </div>
+                    <div class="result-item">
+                        <div class="number">5.2x</div>
+                        <p>Faster sale vs. DIY listings</p>
+                    </div>
+                    <div class="result-item">
+                        <div class="number">94%</div>
+                        <p>Sold within 14 days</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-section">
+                <h2>Ready to sell your car for more?</h2>
+                <div class="price">$47 <span>one-time</span></div>
+                <p>That's less than 1% of your car's value for potentially thousands in return.</p>
+                <p class="guarantee">🔒 100% satisfaction guarantee. If you're not blown away, no charge.</p>
+                
+                <div class="form-section">
+                    <input type="text" placeholder="Car Year, Make, Model">
+                    <input type="email" placeholder="Your email">
+                    <button>Get Started →</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
